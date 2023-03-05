@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'homepage',
+    'accaunts',
 ]
 
 MIDDLEWARE = [
@@ -120,3 +121,11 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
 
 STATIC_URL = '/static/'
+
+#auto-key
+DEFAULT_AUTO_FIELD='django.db.models.AutoField'
+
+
+#login
+LOGIN_REDIRECT_URL = 'home.html'
+LOGOUT_REDIRECT_URL = 'home.html'
